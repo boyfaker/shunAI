@@ -1,0 +1,31 @@
+.resultPage{
+  min-height: 100vh;//设置了最小高度为视口高度，填满页面
+
+  .intro-box {
+    background:#a4d2ea;
+    .headline {
+      text-align: center;
+      margin-bottom: 24px;
+      display: block;
+      color: white;
+      margin-top: 24px;
+      padding-top: 30rpx;
+    }
+    .subtext {
+      display: block;
+      margin-bottom: 16px;
+      line-height: 1.8;
+    }
+    .start-btn {
+      margin-top: 70px;
+      width: 80%;
+      font-size: 30px;
+      border-radius: 24px;
+    }
+    .bg{
+      padding-top:210rpx;
+    }
+  }
+
+}
+
