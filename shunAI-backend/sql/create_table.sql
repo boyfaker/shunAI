@@ -76,8 +76,8 @@ create table if not exists scoring_result
     index idx_appId (appId)
 ) comment '评分结果' collate = utf8mb4_unicode_ci;
 
--- 用户答题记录表-0
-create table if not exists user_answer_0
+-- 用户答题记录表
+create table if not exists user_answer
 (
     id              bigint auto_increment primary key,
     appId           bigint                             not null comment '应用 id',
@@ -95,7 +95,7 @@ create table if not exists user_answer_0
     isDelete        tinyint  default 0                 not null comment '是否删除',
     index idx_appId (appId),
     index idx_userId (userId)
-) comment '用户答题记录-0' collate = utf8mb4_unicode_ci;
+) comment '用户答题记录' collate = utf8mb4_unicode_ci;
 
 -- 用户答题记录表-1
 create table if not exists user_answer_1
