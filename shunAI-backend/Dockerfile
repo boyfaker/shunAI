@@ -9,5 +9,8 @@ COPY src ./src
 # Build a release artifact.
 RUN mvn package -DskipTests
 
+# 暴露端口（加在这里）
+EXPOSE 8101
+
 # Run the web service on container startup.
 CMD ["java","-jar","/app/target/shunAI-backend-0.0.1-SNAPSHOT.jar","--spring.profiles.active=prod"]
